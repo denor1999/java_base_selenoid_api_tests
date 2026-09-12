@@ -1,0 +1,391 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Generated Schema",
+  "type": "object",
+  "properties": {
+    "total": {
+      "type": "integer"
+    },
+    "used": {
+      "type": "integer"
+    },
+    "queued": {
+      "type": "integer"
+    },
+    "pending": {
+      "type": "integer"
+    },
+    "warmReady": {
+      "type": "integer"
+    },
+    "warmTotal": {
+      "type": "integer"
+    },
+    "hotReady": {
+      "type": "integer"
+    },
+    "hotTotal": {
+      "type": "integer"
+    },
+    "warmSlots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "browser": {
+            "type": "string"
+          },
+          "protocol": {
+            "type": "string"
+          },
+          "pool": {
+            "type": "string"
+          },
+          "reservedBy": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "id",
+          "browser",
+          "protocol",
+          "pool"
+        ]
+      }
+    },
+    "hotSlots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "browser": {
+            "type": "string"
+          },
+          "protocol": {
+            "type": "string"
+          },
+          "pool": {
+            "type": "string"
+          },
+          "reservedBy": {
+            "type": ["null", "string"]
+          }
+        },
+        "required": [
+          "id",
+          "browser",
+          "protocol",
+          "pool"
+        ]
+      }
+    },
+    "browsers": {
+      "type": "object",
+      "properties": {
+        "android": {
+          "type": "object",
+          "properties": {
+            "10.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "11.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "12.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "13.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "14.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "15.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "16.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "5.1": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          "required": [
+            "10.0",
+            "11.0",
+            "12.0",
+            "13.0",
+            "14.0",
+            "15.0",
+            "16.0",
+            "5.1"
+          ]
+        },
+        "chrome": {
+          "type": "object",
+          "properties": {
+            "148.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "151.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "152.0": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          "required": [
+            "148.0",
+            "151.0",
+            "152.0"
+          ]
+        },
+        "firefox": {
+          "type": "object",
+          "properties": {
+            "153.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "153.0-min": {
+              "type": "object",
+              "properties": {}
+            },
+            "154.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "154.0-min": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          "required": [
+            "153.0",
+            "153.0-min",
+            "154.0",
+            "154.0-min"
+          ]
+        },
+        "msedge": {
+          "type": "object",
+          "properties": {
+            "150.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "150.0-min": {
+              "type": "object",
+              "properties": {}
+            },
+            "151.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "151.0-min": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          "required": [
+            "150.0",
+            "150.0-min",
+            "151.0",
+            "151.0-min"
+          ]
+        },
+        "playwright-chrome": {
+          "type": "object",
+          "properties": {
+            "1.60.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "1.61.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "1.61.1": {
+              "type": "object",
+              "properties": {}
+            },
+            "1.62.1": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          "required": [
+            "1.60.0",
+            "1.61.0",
+            "1.61.1",
+            "1.62.1"
+          ]
+        },
+        "playwright-chromium": {
+          "type": "object",
+          "properties": {
+            "1.60.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "1.60.0-min": {
+              "type": "object",
+              "properties": {}
+            },
+            "1.61.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "1.61.1": {
+              "type": "object",
+              "properties": {}
+            },
+            "1.61.1-min": {
+              "type": "object",
+              "properties": {}
+            },
+            "1.62.1": {
+              "type": "object",
+              "properties": {}
+            },
+            "1.62.1-min": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          "required": [
+            "1.60.0",
+            "1.60.0-min",
+            "1.61.0",
+            "1.61.1",
+            "1.61.1-min",
+            "1.62.1",
+            "1.62.1-min"
+          ]
+        },
+        "playwright-firefox": {
+          "type": "object",
+          "properties": {
+            "1.60.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "1.61.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "1.61.1": {
+              "type": "object",
+              "properties": {}
+            },
+            "1.62.1": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          "required": [
+            "1.60.0",
+            "1.61.0",
+            "1.61.1",
+            "1.62.1"
+          ]
+        },
+        "playwright-msedge": {
+          "type": "object",
+          "properties": {
+            "1.60.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "1.61.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "1.61.1": {
+              "type": "object",
+              "properties": {}
+            },
+            "1.62.1": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          "required": [
+            "1.60.0",
+            "1.61.0",
+            "1.61.1",
+            "1.62.1"
+          ]
+        },
+        "playwright-webkit": {
+          "type": "object",
+          "properties": {
+            "1.60.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "1.61.0": {
+              "type": "object",
+              "properties": {}
+            },
+            "1.61.1": {
+              "type": "object",
+              "properties": {}
+            },
+            "1.62.1": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          "required": [
+            "1.60.0",
+            "1.61.0",
+            "1.61.1",
+            "1.62.1"
+          ]
+        }
+      },
+      "required": [
+        "android",
+        "chrome",
+        "firefox",
+        "msedge",
+        "playwright-chrome",
+        "playwright-chromium",
+        "playwright-firefox",
+        "playwright-msedge",
+        "playwright-webkit"
+      ]
+    }
+  },
+  "required": [
+    "total",
+    "used",
+    "queued",
+    "pending",
+    "warmReady",
+    "warmTotal",
+    "hotReady",
+    "hotTotal",
+    "warmSlots",
+    "hotSlots",
+    "browsers"
+  ]
+}
