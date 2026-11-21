@@ -60,8 +60,8 @@ public class StatusTests extends TestBase{
                 .then()
                 .log().all()
                 .statusCode(200)
-                .body("browsers.chrome", hasKey("151.0"))
-                .body("browsers.chrome", hasKey("152.0"));
+                .body("browsers.chrome", hasKey("157.0"))
+                .body("browsers.chrome", hasKey("158.0"));
     }
 
     @Test
